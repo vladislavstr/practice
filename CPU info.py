@@ -35,3 +35,25 @@ print(f'Total: {GetSize(svmem.total)}')
 print(f'Available: {GetSize(svmem.available)}')
 print(f'Used: {GetSize(svmem.used)}')
 print(f'Percentage: {svmem.percent}%')
+
+
+# GPU Info 
+print('')
+print('#'*10, 'GPU info', '#'*10)
+print('')
+
+def GPUInfoTable():
+	gpus = GPUtil.getGPUs()
+	list_gpus = []
+	for gpu in gpus:
+		gpu_id = gpu.id
+		gpu_name = gpu.name
+		gpu_load = f'{gpu.load * 100}%'
+		gpu_free_memory = f'{gpu.memoryFree}Mb'
+		gpu_used_memory = f'{gpu.memoryUsed}Mb'
+		gpu_total_memory = f'{gpu.memoryTotal}Mb'
+		gpu_temperature = f'{gpu.temperature} C'
+		gpu_uuid = gpu.uuid
+		list_gpus.append()
+
+	return str(tabulate(list_gpus, headers = ()))
