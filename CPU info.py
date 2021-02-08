@@ -1,5 +1,6 @@
 import psutil
-
+import GPUtil
+from tabulate import tabulate
 
 #number of cores
 print('Physical cores', psutil.cpu_count(logical = False))
@@ -23,7 +24,7 @@ print('')
 print('#'*10, 'RAM info', '#'*10)
 print('')
 
-def GetSize(bytes, suffix = '8'):
+def get_size(bytes, suffix = '8'):
 	factor = 1024
 	for unit in ['', 'K', 'M', 'G', 'T', 'P']:
 		if bytes < factor:
@@ -31,9 +32,9 @@ def GetSize(bytes, suffix = '8'):
 		bytes /= factor
 		
 svmem = psutil.virtual_memory()
-print(f'Total: {GetSize(svmem.total)}')
-print(f'Available: {GetSize(svmem.available)}')
-print(f'Used: {GetSize(svmem.used)}')
+print(f'Total: {get_size(svmem.total)}')
+print(f'Available: {get_size(svmem.available)}')
+print(f'Used: {get_size(svmem.used)}')
 print(f'Percentage: {svmem.percent}%')
 
 
@@ -42,7 +43,7 @@ print('')
 print('#'*10, 'GPU info', '#'*10)
 print('')
 
-def GPUInfoTable():
+def GPU_info_table():
 	gpus = GPUtil.getGPUs()
 	list_gpus = []
 	for gpu in gpus:
@@ -54,6 +55,18 @@ def GPUInfoTable():
 		gpu_total_memory = f'{gpu.memoryTotal}Mb'
 		gpu_temperature = f'{gpu.temperature} C'
 		gpu_uuid = gpu.uuid
-		list_gpus.append()
 
-	return str(tabulate(list_gpus, headers = ()))
+		list_gpus.append((gpu_id,
+		 gpu_name, 
+		 gpu_load, 
+		 gpu_free_memory, 
+		 gpu_used_memory, 
+		 gpu_total_memory, 
+		 gpu_temperature, 
+		 gpu_uuid))
+
+	#return str(tabulate(list_gpus, headers = ('id', 'name', 'load', 'free memory', 'used memory', 'total memory', 'temperature', 'uuid'), tablefmt = 'pretty'))
+	print(gpu_id)
+
+if __name__ == "__main__":
+	print(GPU_info_table)	
