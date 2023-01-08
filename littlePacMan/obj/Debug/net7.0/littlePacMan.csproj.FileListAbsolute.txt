@@ -1,0 +1,15 @@
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/bin/Debug/net7.0/littlePacMan
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/bin/Debug/net7.0/littlePacMan.deps.json
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/bin/Debug/net7.0/littlePacMan.runtimeconfig.json
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/bin/Debug/net7.0/littlePacMan.dll
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/bin/Debug/net7.0/littlePacMan.pdb
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.csproj.AssemblyReference.cache
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.AssemblyInfoInputs.cache
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.AssemblyInfo.cs
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.csproj.CoreCompileInputs.cache
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.dll
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/refint/littlePacMan.dll
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.pdb
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/littlePacMan.genruntimeconfig.cache
+/Users/vladislavstrelnikov/Documents/GitHub/makeyou.pro/littlePacMan/obj/Debug/net7.0/ref/littlePacMan.dll
